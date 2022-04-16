@@ -1,0 +1,152 @@
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+html,
+body {
+	background-color:#fff;
+	color:#000;
+	text-rendering:optimizeLegibility;
+	font-size:16px;
+	font-family:'Work Sans','Arial',sans-serif;
+
+
+}
+
+
+.row {
+	max-width:1140px;
+	margin:0 auto;
+}
+
+
+/*** HEADING SECTION ****/
+
+h1 {
+
+	font-size:500%;
+	color:#fff;
+	font-weight:400;
+	margin-bottom:20px;
+
+}
+
+
+
+header {
+	background-image:linear-gradient(rgba(0,0,0,.3),rgb(0,0,0,.7)),url(resources/back-img.jpg);
+	height:100vh;
+	background-size:cover;
+	background-position:center;
+}
+
+
+
+
+.main-nav {
+	list-style:none;
+	float:right;
+	margin-top:50px;
+}
+
+.main-nav li {
+	display:inline-block;
+	margin-right:40px;
+	text-transform:uppercase;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+	text-decoration: none;
+	color:#fff;
+	transition: border-bottom 1s;
+}
+
+.main-nav li a:hover {
+     
+	border-bottom:2px solid #ed07b7;
+}
+
+.logo {
+    margin: 15px;
+	height:100px;
+	width:auto;
+	float:left;
+    border-radius: 100%;
+}
+
+main{
+	position: absolute;
+	top: 10%;
+	left: 20%;
+	color:#fff;
+	font-size:larger;
+}
+.main-head{
+	margin-bottom: 40px;
+}
+.main-head hr{
+	margin-top: 20px;
+}
+
+.container{
+     display: flex;
+	 grid-gap: 50px;
+     /* justify-content: space-between; */
+ 
+}
+
+#profile-pic{
+     border-radius: 100%;
+     height: 200px;
+     width: auto;
+}
+.nom-prenom{
+	font-family:'brush script mt', cursive;
+}
+.nom-prenom span{
+	color: rgb(238, 109, 109);
+}
+.about-me{
+     color: #fff;
+}
+
+.competences{
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	color:#fff;
+	font-size:larger;
+}
+
+ol{
+	list-style:disc;
+	font-size: 200%;
+	margin-left: 70px;
+}
+li{
+	margin-bottom: 15px;
+}
+/* css Gallery */
+
+.img-container{
+	position:absolute;
+	top: 20%;
+	left: 8%;
+	height: 50px;
+	display: grid;
+	grid-template-columns: repeat(6,1fr);
+	gap: 10px;
+}
+.img-container img{
+	width: 100%;
+	height: 200px;
+}
+@media screen and (min-width:1500px) {
+	.img-container img{
+		height: 250px;
+	}
+	
+}
